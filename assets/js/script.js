@@ -6,7 +6,7 @@ $(document).ready(function () {
   }
 
   $(".common-slider").slick({
-    slidesToShow: 4,
+    slidesToShow: 3,
     prevArrow:
       "<div class='time-arrow left-arrow'><i class='fas fa-chevron-left'></i></div>",
     nextArrow:

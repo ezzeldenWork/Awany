@@ -48,6 +48,10 @@ body {
   color: #000;
 }
 
+.slick-slider:active {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
 .slick-slider .time-arrow {
   position: absolute;
   top: 50%;
@@ -250,6 +254,7 @@ body {
 .product-box .img-box {
   position: relative;
   display: inline-block;
+  width: 100%;
 }
 .product-box .img-box img {
   width: 100%;

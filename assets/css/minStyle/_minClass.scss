@@ -20,6 +20,9 @@
 }
 
 .slick-slider {
+  &:active {
+    cursor: grab;
+  }
   .time-arrow {
     position: absolute;
     top: 50%;
