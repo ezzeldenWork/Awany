@@ -1,0 +1,87 @@
+.header-section {
+  background-color: $color-gray;
+  .nav-list {
+    ul {
+      display: flex;
+      align-items: center;
+      li {
+        a {
+          padding: 20px 40px;
+          font-size: 14px;
+          font-weight: 600;
+          display: block;
+          @extend%trans2;
+          color: $color-white;
+          &:hover,
+          &.active {
+            background-color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+  .search-box {
+    text-align: end;
+    form {
+      justify-content: flex-end;
+      display: flex;
+      border-bottom: 1px solid $color-white;
+      input {
+        width: 100%;
+        background-color: transparent;
+        border: 0;
+        color: $color-white;
+        padding: 6px;
+        outline: 0;
+        &:focus {
+          box-shadow: 0;
+          outline: none;
+          border: 0;
+        }
+        &::placeholder {
+          color: $color-white;
+        }
+      }
+      button {
+        color: $color-white;
+        border: 0;
+        background-color: transparent;
+      }
+    }
+  }
+  .user-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .login-item {
+      padding: 0 20px;
+      a {
+        font-size: 15px;
+        color: $color-white;
+        font-weight: 500;
+      }
+    }
+    .cart-list-icon {
+      .cart-icon {
+        @extend%trans2;
+        background-color: $color-white;
+        color: $color-primary;
+        height: 34px;
+        aspect-ratio: 1;
+        font-size: 16px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: inset 0px -3px 4px rgba(111, 12, 11, 0.25),
+          inset 0px 3px 4px rgba(111, 12, 11, 0.1);
+        cursor: pointer;
+        &:hover {
+          color: $color-gray;
+          box-shadow: inset 0px -3px 4px rgba($color-gray, 0.25),
+            inset 0px 3px 4px rgba($color-gray, 0.1);
+        }
+      }
+    }
+  }
+}

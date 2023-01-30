@@ -1,0 +1,9 @@
+.intro-section {
+  position: relative;
+  &:after {
+    position: absolute;
+    inset: 0;
+    content: "";
+    background-color: rgba($color-primary, 0.15);
+  }
+}
