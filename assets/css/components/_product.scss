@@ -53,6 +53,10 @@
   border-radius: 10px;
   padding: 12px;
   background-color: $color-of-white;
+  @extend%trans4;
+  &:hover {
+    background-color: rgba($color-primary, 0.1);
+  }
   .img-box {
     position: relative;
     display: inline-block;

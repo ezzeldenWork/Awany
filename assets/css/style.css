@@ -215,6 +215,9 @@ body {
   padding: 12px;
   background-color: #f5f5f5;
 }
+.product-box:hover {
+  background-color: rgba(111, 12, 11, 0.1);
+}
 .product-box .img-box {
   position: relative;
   display: inline-block;
@@ -383,7 +386,7 @@ html[dir=ltr] .link-box a i {
   color: #6f737f;
 }
 
-.link-box a:after, .link-box a::before {
+.product-box, .link-box a:after, .link-box a::before {
   transition: 0.4s all ease-in-out;
 }
 
