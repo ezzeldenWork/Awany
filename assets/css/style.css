@@ -80,6 +80,9 @@ body {
 .slick-slider .time-arrow.left-arrow {
   left: -40px;
 }
+.slick-slider .slider-item {
+  width: calc(100% - 20px) !important;
+}
 
 .header-section {
   background-color: #6f737f;
@@ -181,10 +184,6 @@ body {
   inset: 0;
   content: "";
   background-color: rgba(111, 12, 11, 0.15);
-}
-
-.common-product-section .common-slider .common-slider-item {
-  width: calc(100% - 20px) !important;
 }
 
 .section-title .title {
