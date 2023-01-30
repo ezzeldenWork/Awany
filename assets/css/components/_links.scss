@@ -1,0 +1,41 @@
+.link-box {
+  //   display: inline-block;
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 60px;
+    background-color: $color-primary;
+    @extend%trans2;
+    border-radius: 10px;
+    color: $color-white;
+    font-size: 16px;
+    font-weight: 600;
+    &:hover {
+      background-color: $color-gray;
+    }
+    i {
+      @include dir(rtl) {
+        padding: 0 12px 0 0;
+      }
+      @include dir(ltr) {
+        padding: 0 0 0 12px;
+      }
+    }
+  }
+}
+
+.more-link {
+  a {
+    font-size: 18px;
+    font-weight: 500;
+    color: $color-black;
+    @extend%trans2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    &:hover {
+      color: $color-gray;
+    }
+  }
+}

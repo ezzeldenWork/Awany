@@ -38,6 +38,16 @@ body {
   padding: 40px 0;
 }
 
+.section-margin-40 {
+  margin: 40px 0;
+}
+
+.prag {
+  font-size: 22px;
+  font-weight: 500;
+  color: #000;
+}
+
 .header-section {
   background-color: #6f737f;
 }
@@ -103,7 +113,7 @@ body {
   color: #fff;
   font-weight: 500;
 }
-.header-section .user-box .cart-list-icon .cart-icon {
+.icon-box {
   background-color: #fff;
   color: #6f0c0b;
   height: 34px;
@@ -116,19 +126,32 @@ body {
   box-shadow: inset 0px -3px 4px rgba(111, 12, 11, 0.25), inset 0px 3px 4px rgba(111, 12, 11, 0.1);
   cursor: pointer;
 }
-.header-section .user-box .cart-list-icon .cart-icon:hover {
+.icon-box a {
+  color: #6f0c0b;
+}
+.icon-box:hover {
   color: #6f737f;
   box-shadow: inset 0px -3px 4px rgba(111, 115, 127, 0.25), inset 0px 3px 4px rgba(111, 115, 127, 0.1);
+}
+.icon-box:hover a {
+  color: #6f737f;
 }
 
 .intro-section {
   position: relative;
+}
+.intro-section img {
+  width: 100%;
 }
 .intro-section:after {
   position: absolute;
   inset: 0;
   content: "";
   background-color: rgba(111, 12, 11, 0.15);
+}
+
+.common-product-section .common-slider .common-slider-item {
+  width: calc(100% - 20px) !important;
 }
 
 .section-title .title {
@@ -187,6 +210,140 @@ body {
   font-weight: 600;
 }
 
-.header-section .nav-list ul li a, .header-section .user-box .cart-list-icon .cart-icon, .min-product, .min-product:after {
+.product-box {
+  border-radius: 10px;
+  padding: 12px;
+  background-color: #f5f5f5;
+}
+.product-box .img-box {
+  position: relative;
+  display: inline-block;
+}
+.product-box .img-box img {
+  width: 100%;
+  border-radius: 6px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 1;
+}
+.product-box .img-box .icon-box {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  box-shadow: unset !important;
+}
+.product-box .img-box .offer-box {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  background-color: #6f0c0b;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 4px 0 0 4px;
+  z-index: 1;
+}
+.product-box .category-name {
+  font-weight: 550;
+  font-size: 16px;
+  color: #6f0c0b;
+  padding: 14px 0;
+}
+.product-box .product-name {
+  font-size: 22px;
+  font-weight: 600;
+  color: black;
+}
+.product-box .price-box {
+  padding: 20px 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.product-box .price-box .price {
+  font-size: 24px;
+  color: #6f0c0b;
+  font-weight: 600;
+}
+.product-box .price-box .price-discount {
+  font-size: 16px;
+  font-weight: 500;
+  color: #6f737f;
+}
+.product-box .link-box .link-item {
+  padding: 14px 20px;
+}
+
+.history-banner-section {
+  padding: 60px 0;
+  z-index: 1;
+  position: relative;
+}
+.history-banner-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(111, 12, 11, 0.18);
+  z-index: -1;
+}
+.history-banner-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../img/bannerBack.png");
+  z-index: -2;
+  opacity: 0.3;
+}
+.history-banner-section .banner-content .banner-title {
+  color: black;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: Lemonada;
+}
+.history-banner-section .banner-content .prag {
+  padding: 24px 0;
+}
+.history-banner-section .banner-img {
+  text-align: end;
+}
+.history-banner-section .banner-img img {
+  filter: drop-shadow(2px 10px 2px rgba(0, 0, 0, 0.2));
+}
+
+.link-box a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 60px;
+  background-color: #6f0c0b;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+.link-box a:hover {
+  background-color: #6f737f;
+}
+html[dir=rtl] .link-box a i {
+  padding: 0 12px 0 0;
+}
+html[dir=ltr] .link-box a i {
+  padding: 0 0 0 12px;
+}
+
+.more-link a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.more-link a:hover {
+  color: #6f737f;
+}
+
+.header-section .nav-list ul li a, .icon-box, .icon-box a, .min-product, .min-product:after, .link-box a, .more-link a {
   transition: 0.2s all ease-in-out;
 }

@@ -62,26 +62,34 @@
       }
     }
     .cart-list-icon {
-      .cart-icon {
-        @extend%trans2;
-        background-color: $color-white;
-        color: $color-primary;
-        height: 34px;
-        aspect-ratio: 1;
-        font-size: 16px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: inset 0px -3px 4px rgba(111, 12, 11, 0.25),
-          inset 0px 3px 4px rgba(111, 12, 11, 0.1);
-        cursor: pointer;
-        &:hover {
-          color: $color-gray;
-          box-shadow: inset 0px -3px 4px rgba($color-gray, 0.25),
-            inset 0px 3px 4px rgba($color-gray, 0.1);
-        }
-      }
+    }
+  }
+}
+
+.icon-box {
+  @extend%trans2;
+  background-color: $color-white;
+  color: $color-primary;
+  height: 34px;
+  aspect-ratio: 1;
+  font-size: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0px -3px 4px rgba(111, 12, 11, 0.25),
+    inset 0px 3px 4px rgba(111, 12, 11, 0.1);
+  cursor: pointer;
+  a {
+    color: $color-primary;
+    @extend%trans2;
+  }
+  &:hover {
+    color: $color-gray;
+    box-shadow: inset 0px -3px 4px rgba($color-gray, 0.25),
+      inset 0px 3px 4px rgba($color-gray, 0.1);
+    a {
+      color: $color-gray;
     }
   }
 }
