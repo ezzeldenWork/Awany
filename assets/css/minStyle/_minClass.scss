@@ -18,3 +18,34 @@
   font-weight: 500;
   color: $color-black;
 }
+
+.slick-slider {
+  .time-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    aspect-ratio: 1;
+    background-color: rgba($color-gray, 1);
+    border-radius: 5px;
+    @extend%trans2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba($color-white, 1);
+    cursor: pointer;
+    z-index: 99;
+    &:hover {
+      background-color: rgba($color-primary, 1);
+    }
+    &.slick-disabled {
+      background-color: rgba($color-gray, 0.2);
+    }
+    &.right-arrow {
+      right: -52px;
+    }
+    &.left-arrow {
+      left: -40px;
+    }
+  }
+}

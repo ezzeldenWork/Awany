@@ -8,9 +8,9 @@ $(document).ready(function () {
   $(".common-slider").slick({
     slidesToShow: 4,
     prevArrow:
-      "<div class='tine-arrow '><i class='fas fa-chevron-left'></i></div>",
+      "<div class='time-arrow left-arrow'><i class='fas fa-chevron-left'></i></div>",
     nextArrow:
-      "<div class='tine-arrow'><i class='fas fa-chevron-right'></i></div>",
+      "<div class='time-arrow right-arrow'><i class='fas fa-chevron-right'></i></div>",
     infinite: false,
     rtl: dir_lang,
     responsive: [
