@@ -68,6 +68,7 @@ body {
 }
 .slick-slider .time-arrow.slick-disabled {
   background-color: rgba(111, 115, 127, 0.2);
+  cursor: no-drop;
 }
 .slick-slider .time-arrow.right-arrow {
   right: -52px;
@@ -301,6 +302,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   color: #6f737f;
+  text-decoration: line-through;
 }
 .product-box .link-box .link-item {
   padding: 14px 20px;
@@ -374,10 +376,6 @@ body {
 }
 .link-box a:hover {
   background-color: #6f737f;
-}
-.link-box a:hover:after {
-  left: 6px;
-  transform: rotate(0);
 }
 .link-box a:hover::before {
   opacity: 0.1;

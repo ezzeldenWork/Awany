@@ -40,6 +40,7 @@
     }
     &.slick-disabled {
       background-color: rgba($color-gray, 0.2);
+      cursor: no-drop;
     }
     &.right-arrow {
       right: -52px;
