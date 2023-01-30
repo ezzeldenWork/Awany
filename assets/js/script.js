@@ -7,8 +7,10 @@ $(document).ready(function () {
 
   $(".common-slider").slick({
     slidesToShow: 4,
-    prevArrow: "#blog-slider-prev",
-    nextArrow: "#blog-slider-next",
+    prevArrow:
+      "<div class='tine-arrow '><i class='fas fa-chevron-left'></i></div>",
+    nextArrow:
+      "<div class='tine-arrow'><i class='fas fa-chevron-right'></i></div>",
     infinite: false,
     rtl: dir_lang,
     responsive: [
