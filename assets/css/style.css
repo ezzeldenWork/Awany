@@ -64,7 +64,7 @@ body {
   z-index: 99;
 }
 .slick-slider .time-arrow:hover {
-  background-color: #6f0c0b;
+  background-color: rgba(111, 12, 11, 0.9);
 }
 .slick-slider .time-arrow.slick-disabled {
   background-color: rgba(111, 115, 127, 0.2);

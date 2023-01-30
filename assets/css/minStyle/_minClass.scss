@@ -36,7 +36,7 @@
     cursor: pointer;
     z-index: 99;
     &:hover {
-      background-color: rgba($color-primary, 1);
+      background-color: rgba($color-primary, 0.9);
     }
     &.slick-disabled {
       background-color: rgba($color-gray, 0.2);
