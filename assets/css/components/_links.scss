@@ -1,5 +1,6 @@
 .link-box {
   //   display: inline-block;
+  overflow: hidden;
   a {
     display: flex;
     align-items: center;
@@ -11,8 +12,46 @@
     color: $color-white;
     font-size: 16px;
     font-weight: 600;
+    z-index: 1;
+    position: relative;
+    &:after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: -60px;
+      height: 30px;
+      @extend%trans4;
+      aspect-ratio: 1;
+      background-image: url("../img/spoon.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      transform: rotate(90deg);
+    }
+    &::before {
+      z-index: -3;
+      position: absolute;
+      content: "";
+      top: 0;
+      opacity: 0;
+      right: 0px;
+      height: 60px;
+      @extend%trans4;
+      aspect-ratio: 1;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url("../img/knife.png");
+    }
     &:hover {
       background-color: $color-gray;
+      &:after {
+        left: 6px;
+        transform: rotate(0);
+      }
+      &::before {
+        opacity: 0.1;
+      }
     }
     i {
       @include dir(rtl) {
