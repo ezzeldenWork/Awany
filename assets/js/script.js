@@ -7,8 +7,7 @@ $(document).ready(function () {
 
   $(".common-slider").slick({
     slidesToShow: 3,
-    prevArrow:
-      "<div class='time-arrow left-arrow'><i class='fas fa-chevron-left'></i></div>",
+    prevArrow: "<div class='time-arrow left-arrow'></div>",
     nextArrow:
       "<div class='time-arrow right-arrow'><i class='fas fa-chevron-right'></i></div>",
     infinite: false,

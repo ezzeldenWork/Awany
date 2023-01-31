@@ -1,3 +1,4 @@
+// min-product
 .min-product {
   text-align: center;
   padding: 20px;
@@ -49,6 +50,7 @@
   }
 }
 
+// product-box
 .product-box {
   border-radius: 10px;
   padding: 12px;
@@ -97,21 +99,84 @@
     font-weight: 600;
     color: rgba($color-black, 1);
   }
-  .price-box {
-    padding: 20px 0;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    .price {
-      font-size: 24px;
-      color: rgba($color-primary, 1);
-      font-weight: 600;
+
+  .link-box {
+    .link-item {
+      padding: 14px 20px;
     }
-    .price-discount {
-      font-size: 16px;
+  }
+}
+
+// price-box
+.price-box {
+  padding: 20px 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  .price {
+    font-size: 24px;
+    color: rgba($color-primary, 1);
+    font-weight: 600;
+  }
+  .price-discount {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba($color-gray, 1);
+    text-decoration: line-through;
+  }
+}
+
+// offer-box
+.offer-box-contain {
+  padding: 14px;
+  border-radius: 5px;
+  background-color: rgba($color-primary, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  height: 100%;
+  &.gray-back {
+    background-color: rgba($color-gray, 0.1);
+  }
+  .content-box {
+    width: 45%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    .offer-title {
+      font-size: 28px;
       font-weight: 500;
-      color: rgba($color-gray, 1);
-      text-decoration: line-through;
+      color: rgba($color-black, 1);
+    }
+    img {
+      margin: 24px auto;
+      height: 120px;
+    }
+    .prag {
+      text-align: start;
+      font-size: 16px;
+    }
+  }
+  .offer-img-box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    flex-grow: 1;
+    @include dir(rtl) {
+      padding: 0 24px 0 0;
+    }
+    img {
+      width: 100%;
+    }
+    .link-box {
+      padding-top: 24px;
     }
   }
   .link-box {
