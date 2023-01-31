@@ -397,6 +397,7 @@ html[dir=rtl] .offer-box-contain .offer-img-box {
   font-family: Lemonada;
 }
 .history-banner-section .banner-content .prag {
+  opacity: 0.7;
   padding: 24px 0;
 }
 .history-banner-section .banner-content .link-box {
