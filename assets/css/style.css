@@ -393,11 +393,14 @@ html[dir=rtl] .offer-box-contain .offer-img-box {
 .history-banner-section .banner-content .banner-title {
   color: black;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 500;
   font-family: Lemonada;
 }
 .history-banner-section .banner-content .prag {
   padding: 24px 0;
+}
+.history-banner-section .banner-content .link-box {
+  width: 70%;
 }
 .history-banner-section .banner-img {
   text-align: end;
