@@ -14,6 +14,7 @@
   @extend%trans2;
   z-index: 1;
   &:after {
+    box-shadow: inset 12px 0 0 0px #ffffff4d;
     content: "";
     background: var(--back-color);
     position: absolute;
@@ -182,6 +183,34 @@
   .link-box {
     .link-item {
       padding: 14px 20px;
+    }
+  }
+}
+
+@media (max-width: 772px) {
+  .min-product {
+    padding: 14px;
+    img {
+      min-height: 100px;
+    }
+    .product-title {
+      font-size: 14px;
+    }
+  }
+  .product-box {
+    .category-name {
+      font-style: 14px;
+    }
+    .product-name {
+      font-size: 18px;
+    }
+  }
+  .price-box {
+    .price {
+      font-size: 20px;
+    }
+    .price-discount {
+      font-size: 14px;
     }
   }
 }

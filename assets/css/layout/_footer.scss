@@ -1,0 +1,38 @@
+.footer-section {
+  padding: 60px 0 20px;
+  margin: 60px 0 0;
+  background-color: $color-gray;
+  .footer-list {
+    padding: 30px 0;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      text-align: center;
+      li {
+        width: 25%;
+        margin: 0 0 12px;
+        a {
+          font-size: 16px;
+          color: $color-white;
+          font-weight: 500;
+          @extend%trans2;
+          &:hover {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+  .copy-box {
+    padding: 30px 0 0;
+    .prag {
+      text-align: center;
+      font-size: 14px;
+      a {
+        color: $color-white;
+      }
+    }
+  }
+}

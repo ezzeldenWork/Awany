@@ -4,12 +4,15 @@ $(document).ready(function () {
   } else {
     var dir_lang = false;
   }
+  const prevArrow =
+      "<div class='time-arrow left-arrow'><i class='fas fa-chevron-left'></i></div>",
+    nextArrow =
+      "<div class='time-arrow right-arrow'><i class='fas fa-chevron-right'></i></div>";
 
   $(".common-slider").slick({
     slidesToShow: 3,
-    prevArrow: "<div class='time-arrow left-arrow'></div>",
-    nextArrow:
-      "<div class='time-arrow right-arrow'><i class='fas fa-chevron-right'></i></div>",
+    prevArrow: prevArrow,
+    nextArrow: nextArrow,
     infinite: false,
     rtl: dir_lang,
     responsive: [
@@ -22,6 +25,7 @@ $(document).ready(function () {
       {
         breakpoint: 772,
         settings: {
+          arrows: false,
           slidesToShow: 1,
         },
       },
@@ -29,10 +33,8 @@ $(document).ready(function () {
   });
   $(".new-slider").slick({
     slidesToShow: 3,
-    prevArrow:
-      "<div class='time-arrow left-arrow'><i class='fas fa-chevron-left'></i></div>",
-    nextArrow:
-      "<div class='time-arrow right-arrow'><i class='fas fa-chevron-right'></i></div>",
+    prevArrow: prevArrow,
+    nextArrow: nextArrow,
     infinite: false,
     rtl: dir_lang,
     responsive: [
@@ -45,6 +47,7 @@ $(document).ready(function () {
       {
         breakpoint: 772,
         settings: {
+          arrows: false,
           slidesToShow: 1,
         },
       },

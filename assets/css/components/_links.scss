@@ -60,3 +60,16 @@
     }
   }
 }
+@media (max-width: 772px) {
+  .more-link {
+    a {
+      font-size: 14px;
+    }
+  }
+  .link-box {
+    .link-item {
+      font-size: 14px;
+      padding: 14px 30px;
+    }
+  }
+}

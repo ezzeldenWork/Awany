@@ -39,3 +39,25 @@
     }
   }
 }
+@media (max-width: 772px) {
+  .history-banner-section {
+    padding: 30px 0;
+    .banner-content {
+      text-align: center;
+      .banner-title {
+        font-size: 30px;
+      }
+      .link-box {
+        width: 70%;
+        margin: 0 auto;
+      }
+    }
+    .banner-img {
+      padding-bottom: 24px;
+      text-align: center;
+      img {
+        height: 150px;
+      }
+    }
+  }
+}
