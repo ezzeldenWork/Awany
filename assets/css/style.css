@@ -266,6 +266,13 @@ body {
   color: #fff;
 }
 
+@media (max-width: 772px) {
+  .footer-section .footer-list ul li {
+    margin: 0 0 20px;
+    text-align: start;
+    width: 50%;
+  }
+}
 .intro-section {
   position: relative;
 }
