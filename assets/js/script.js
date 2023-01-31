@@ -7,7 +7,7 @@ $(document).ready(function () {
   const prevArrow =
       "<div class='time-arrow left-arrow'><i class='fas fa-chevron-left'></i></div>",
     nextArrow =
-      "<div class='time-arrow right-arrow'><i class='fas fa-chevron-right'></i></div>";
+      "<div  class='time-arrow right-arrow'><i class='fas fa-chevron-right'></i></div>";
 
   // open menu
 
