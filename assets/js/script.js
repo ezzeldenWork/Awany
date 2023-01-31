@@ -9,6 +9,20 @@ $(document).ready(function () {
     nextArrow =
       "<div class='time-arrow right-arrow'><i class='fas fa-chevron-right'></i></div>";
 
+  // open menu
+
+  $(document).click(function (e) {
+    e.preventDefault();
+    if ($(window).width() < 772) {
+      $(".header-section .nav-list").slideUp();
+    }
+  });
+  $(".header-section .logo-box .menu-icon i").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $(".header-section .nav-list").slideToggle();
+  });
+
   $(".common-slider").slick({
     slidesToShow: 3,
     prevArrow: prevArrow,

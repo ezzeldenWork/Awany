@@ -96,8 +96,20 @@ body {
 .header-section {
   background-color: #6f737f;
 }
-.header-section .menu-icon {
+.header-section .logo-box {
+  display: flex;
+  align-items: center;
+}
+.header-section .logo-box .menu-icon {
   display: none;
+}
+.header-section .logo-box .menu-icon i {
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+.header-section .logo-box .menu-icon i:hover {
+  color: #6f0c0b;
 }
 .header-section .nav-list ul {
   display: flex;
@@ -189,6 +201,31 @@ body {
   .header-section .nav-list ul li a {
     padding: 17px 10px;
     font-size: 12px;
+  }
+}
+@media (max-width: 772px) {
+  .order-1-header {
+    order: -1;
+  }
+  .header-section {
+    position: relative;
+  }
+  .header-section .logo-box .menu-icon {
+    display: block;
+  }
+  .header-section .nav-list {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    z-index: 999999;
+    width: 100%;
+    right: 0;
+    background-color: #6f737f;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.3);
+    display: none;
+  }
+  .header-section .nav-list ul {
+    display: block;
   }
 }
 .footer-section {
@@ -464,6 +501,8 @@ html[dir=rtl] .offer-box-contain .offer-img-box {
   padding: 60px 0;
   z-index: 1;
   position: relative;
+  -o-border-image: url("../img/historyLine.png") 30 round;
+     border-image: url("../img/historyLine.png") 30 round;
 }
 .history-banner-section::after {
   content: "";
@@ -590,6 +629,6 @@ html[dir=ltr] .link-box a i {
   transition: 0.4s all ease-in-out;
 }
 
-.slick-slider .time-arrow, .header-section .nav-list ul li a, .icon-box, .icon-box a, .footer-section .footer-list ul li a, .min-product, .min-product:after, .link-box a, .more-link a {
+.slick-slider .time-arrow, .header-section .logo-box .menu-icon i, .header-section .nav-list ul li a, .icon-box, .icon-box a, .footer-section .footer-list ul li a, .min-product, .min-product:after, .link-box a, .more-link a {
   transition: 0.2s all ease-in-out;
 }
