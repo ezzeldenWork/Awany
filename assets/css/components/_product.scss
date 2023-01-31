@@ -149,6 +149,13 @@
     align-items: center;
     flex-direction: column;
     height: 100%;
+    .link-box {
+      display: none;
+      width: 100%;
+      .link-item {
+        width: 100%;
+      }
+    }
     .offer-title {
       font-size: 28px;
       font-weight: 500;
@@ -211,6 +218,29 @@
     }
     .price-discount {
       font-size: 14px;
+    }
+  }
+  .offer-box-contain {
+    display: flex;
+    flex-direction: column;
+    .offer-img-box {
+      order: -1;
+      width: 100%;
+      .link-box {
+        display: none;
+      }
+      @include dir(rtl) {
+        padding: 0 0 24px;
+      }
+    }
+    .content-box {
+      width: 100%;
+      img {
+        margin: 12px auto;
+      }
+      .link-box {
+        display: block;
+      }
     }
   }
 }
