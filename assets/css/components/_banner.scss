@@ -2,7 +2,9 @@
   padding: 60px 0;
   z-index: 1;
   position: relative;
-  border-image: url("../img/historyLine.png") 30 round;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   &::after {
     content: "";
     position: absolute;
@@ -17,6 +19,19 @@
     background-image: url("../img/bannerBack.png");
     z-index: -2;
     opacity: 0.3;
+  }
+  &.banner-backGround {
+    &::after {
+      background-color: rgba($color-primary, 0.3);
+    }
+    .banner-content {
+      .banner-title {
+        color: rgba($color-white, 1);
+      }
+      .prag {
+        color: rgba($color-white, 1);
+      }
+    }
   }
   .banner-content {
     .banner-title {

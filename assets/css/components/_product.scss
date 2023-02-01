@@ -14,7 +14,6 @@
   @extend%trans2;
   z-index: 1;
   &:after {
-    box-shadow: inset 12px 0 0 0px #ffffff4d;
     content: "";
     background: var(--back-color);
     position: absolute;
@@ -190,6 +189,215 @@
   .link-box {
     .link-item {
       padding: 14px 20px;
+    }
+  }
+}
+
+// product-details-section
+.product-details-section {
+  .product-title-category {
+    font-size: 24px;
+    font-weight: 500;
+    color: rgba($color-primary, 1);
+    padding: 0 0 24px;
+  }
+  .product-details-img {
+    img {
+      height: 467px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .img-box {
+      margin-bottom: 24px;
+      position: relative;
+      .offer-box {
+        position: absolute;
+        top: 20px;
+        right: 0;
+        background-color: rgba(#d94d4d, 1);
+        color: rgba($color-white, 1);
+        font-size: 18px;
+        font-weight: 600;
+        padding: 6px 20px;
+        border-radius: 4px 0 0 4px;
+        z-index: 1;
+      }
+    }
+  }
+  .product-slider {
+    .product-slider-item {
+      cursor: pointer;
+      img {
+        height: 114px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+    }
+  }
+  .product-details-content {
+    .product-title {
+      font-size: 26px;
+      font-weight: 600;
+      color: rgba($color-black, 1);
+    }
+    .price-box {
+      width: fit-content;
+      .price {
+        font-size: 28px;
+        font-weight: 800;
+      }
+      .price-discount {
+        padding: 0 12px;
+      }
+    }
+    .details-box {
+      padding: 0 0 24px;
+      .details-title {
+        color: $color-gray;
+        font-size: 22px;
+        font-weight: 500;
+        padding: 0 0 12px;
+      }
+      .details-box-list {
+        display: flex;
+        align-items: center;
+        &.size-list {
+          li {
+            background-color: rgba($color-of-white, 1);
+            font-weight: 600;
+            font-size: 24px;
+            color: rgba($color-black, 1);
+          }
+        }
+        li {
+          border: 0.5px solid rgba($color-gray, 0.2);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+          border-radius: 4px;
+          margin: 0 0 0 12px;
+          height: 40px;
+          aspect-ratio: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+        }
+      }
+      .prag {
+        font-weight: 500;
+        font-size: 18px;
+        width: 80%;
+        color: rgba($color-black, 0.8);
+      }
+      &.button-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .icon-box {
+          height: 40px;
+          font-size: 20px;
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+.details-tap-section {
+  .tab-box {
+    border-radius: 15px;
+    background-color: rgba($color-of-white, 0.3);
+    .nav-tabs {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1x solid rgba($color-gray, 1);
+      .nav-link {
+        width: 25%;
+        border: 0;
+        padding: 12px;
+        color: $color-gray;
+        border-bottom: 1px solid rgba($color-gray, 1) !important;
+        font-weight: 500;
+        &.active {
+          font-weight: 600;
+          background-color: transparent;
+          border-bottom: 3px solid rgba($color-gray, 1) !important;
+        }
+      }
+    }
+
+    // tab-content
+
+    .tab-content {
+      padding: 24px 12px;
+      .tab-details {
+        padding: 0 0 30px;
+        &:last-of-type {
+          padding: 0;
+        }
+        .link-box {
+          display: inline-block;
+          .link-item {
+            margin: 0 auto;
+          }
+        }
+        .details-title {
+          font-size: 24px;
+          font-weight: 600;
+          padding-bottom: 12px;
+          color: rgba($color-primary, 1);
+          img {
+            height: 60px;
+          }
+        }
+        .details-list {
+          padding: 6px 20px;
+          list-style: disc;
+          li {
+            color: rgba($color-black, 1);
+            font-size: 18px;
+            font-weight: 600;
+            padding-bottom: 12px;
+          }
+        }
+        .delivery-details {
+          font-size: 20px;
+          color: rgba($color-gray, 1);
+          .title {
+            font-weight: 500;
+          }
+          .priec {
+            font-weight: 700;
+            color: rgba($color-black, 1);
+          }
+        }
+        .delivary-list {
+          padding: 10px 20px;
+          li {
+            margin-bottom: 12px;
+            font-size: 19px;
+            font-weight: 400;
+            position: relative;
+            color: rgba($color-black, 1);
+            &::after {
+              top: 10px;
+              right: -20px;
+              height: 2px;
+              width: 14px;
+              position: absolute;
+              content: "";
+              background-color: rgba($color-black, 1);
+            }
+            .details {
+              font-weight: 600;
+              color: rgba($color-primary, 1);
+            }
+          }
+        }
+      }
     }
   }
 }
