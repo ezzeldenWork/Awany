@@ -30,6 +30,7 @@
     font-weight: 600;
     z-index: 1;
     position: relative;
+    border: 0;
     &::before {
       z-index: -3;
       position: absolute;

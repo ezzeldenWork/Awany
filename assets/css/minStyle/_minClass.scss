@@ -57,15 +57,13 @@
   }
 }
 
-.star-list {
+.rate-list-star {
   display: flex;
-  align-items: center;
   li {
     padding: 0 6px;
-    font-size: 20px;
-    color: rgba($color-gold, 1);
-    &.gray-star {
-      color: rgba($color-gray, 0.5);
+    svg {
+      width: 20px;
+      height: 20px;
     }
   }
 }
@@ -78,6 +76,9 @@
     .slider-item {
       width: 100% !important;
       padding: 0 12px;
+    }
+    .time-arrow {
+      width: 30px;
     }
   }
 }

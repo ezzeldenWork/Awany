@@ -67,10 +67,18 @@ $(document).ready(function () {
       },
     ],
   });
+  $(".rate-slider-box .rate-slider").slick({
+    slidesToShow: 1,
+    prevArrow: prevArrow,
+    nextArrow: nextArrow,
+    infinite: false,
+    rtl: dir_lang,
+  });
   $(".product-details-section .product-slider").slick({
     slidesToShow: 3,
     infinite: true,
     rtl: dir_lang,
+    arrows: false,
     autoplay: true,
     autoplaySpeed: 2000,
   });
