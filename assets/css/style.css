@@ -203,6 +203,12 @@ body {
   background-color: #6f0c0b;
   box-shadow: inset 0px -3px 4px rgba(111, 12, 11, 0), inset 0px 3px 4px rgba(111, 12, 11, 0);
 }
+.icon-box.checked:hover {
+  background-color: rgba(111, 12, 11, 0.8);
+}
+.icon-box.checked:hover a {
+  color: white;
+}
 .icon-box.checked a {
   color: white;
 }
