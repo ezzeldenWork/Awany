@@ -96,6 +96,14 @@
   box-shadow: inset 0px -3px 4px rgba(111, 12, 11, 0.25),
     inset 0px 3px 4px rgba(111, 12, 11, 0.1);
   cursor: pointer;
+  &.checked {
+    background-color: rgba($color-primary, 1);
+    box-shadow: inset 0px -3px 4px rgba(111, 12, 11, 0),
+      inset 0px 3px 4px rgba(111, 12, 11, 0);
+    a {
+      color: rgba($color-white, 1);
+    }
+  }
   a {
     color: $color-primary;
     @extend%trans2;

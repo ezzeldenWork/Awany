@@ -102,4 +102,10 @@ $(document).ready(function () {
       return;
     }
   });
+
+  // favorite-icon-box
+  $(".favorite-icon-box").click(function (e) {
+    e.preventDefault();
+    $(this).toggleClass("checked");
+  });
 });

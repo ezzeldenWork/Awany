@@ -199,6 +199,13 @@ body {
   box-shadow: inset 0px -3px 4px rgba(111, 12, 11, 0.25), inset 0px 3px 4px rgba(111, 12, 11, 0.1);
   cursor: pointer;
 }
+.icon-box.checked {
+  background-color: #6f0c0b;
+  box-shadow: inset 0px -3px 4px rgba(111, 12, 11, 0), inset 0px 3px 4px rgba(111, 12, 11, 0);
+}
+.icon-box.checked a {
+  color: white;
+}
 .icon-box a {
   color: #6f0c0b;
 }
