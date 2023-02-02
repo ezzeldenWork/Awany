@@ -23,7 +23,7 @@
     justify-content: center;
     padding: 14px 60px;
     background-color: $color-primary;
-    @extend%trans2;
+    @include trans(0.2);
     border-radius: 10px;
     color: $color-white;
     font-size: 16px;
@@ -39,7 +39,7 @@
       opacity: 0;
       right: 0px;
       height: 60px;
-      @extend%trans4;
+      @include trans(0.4);
       aspect-ratio: 1;
       background-position: center;
       background-size: cover;
@@ -71,7 +71,7 @@
     font-size: 18px;
     font-weight: 500;
     color: $color-black;
-    @extend%trans2;
+    @include trans(0.2);
     display: flex;
     align-items: center;
     justify-content: flex-end;

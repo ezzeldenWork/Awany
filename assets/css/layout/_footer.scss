@@ -17,7 +17,7 @@
           font-size: 16px;
           color: $color-white;
           font-weight: 500;
-          @extend%trans2;
+          @include trans(0.2);
           &:hover {
             color: $color-primary;
           }

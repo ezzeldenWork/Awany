@@ -203,7 +203,7 @@
                       <h6 class="price-discount">60.00 ر.س</h6>
                     </div>
                     <div class="details-box size-list-box">
-                      <h6 class="details-title">اختر المقاس</h6>
+                      <h6 class="details-title-min">اختر المقاس</h6>
                       <ul class="list-unstyled size-list details-box-list">
                         <li>11</li>
                         <li>16</li>
@@ -211,7 +211,7 @@
                       </ul>
                     </div>
                     <div class="details-box color-list-box">
-                      <h6 class="details-title">ألوان المنتج</h6>
+                      <h6 class="details-title-min">ألوان المنتج</h6>
                       <ul class="list-unstyled color-list details-box-list">
                         <li style="background-color: #e4cdc0"></li>
                         <li style="background-color: #a0c3b2"></li>
@@ -219,7 +219,7 @@
                       </ul>
                     </div>
                     <div class="details-box color-list-box">
-                      <h6 class="details-title">وصف المنتج</h6>
+                      <h6 class="details-title-min">وصف المنتج</h6>
                       <p class="prag">
                         طقم سفرة تراثي، كما عودناكم بـ كل ما هو قديم ونادر، متجر
                         اواني وفر لكم طقم سفرة شعبي، يتكون من سفرة خوص ممزوجة
@@ -244,7 +244,13 @@
                       </div>
 
                       <div class="link-box">
-                        <a href="" class="link-item" tabindex="0">
+                        <a
+                          data-bs-toggle="modal"
+                          href="#exampleModalToggle2"
+                          role="button"
+                          class="link-item"
+                          tabindex="0"
+                        >
                           <span class="text">أضف إالى السلة</span>
                           <i class="fas fa-shopping-basket"></i>
                         </a>
@@ -1202,6 +1208,35 @@
         </footer>
       </div>
       <!--           end footer-->
+      <div
+        class="modal fade edit-modal"
+        id="exampleModalToggle2"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="add-chart-title">
+                <h4 class="details-title text-center">
+                  <span class="text"> تم اضافة الطلب للسلة بنجاح </span
+                  ><i class="fas fa-check-circle"></i>
+                </h4>
+              </div>
+              <div class="min-product-box">
+                <div class="img-box">
+                  <img
+                    src="./assets/img/fanus-bitariat5-600x600-removebg-preview 2.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="overlay"></div>
     </div>

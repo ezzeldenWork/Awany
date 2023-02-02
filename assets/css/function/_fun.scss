@@ -3,3 +3,6 @@
     @content;
   }
 }
+@mixin trans($time) {
+  transition: #{$time}s all ease-in-out;
+}

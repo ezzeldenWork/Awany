@@ -57,6 +57,14 @@
   .service-list-box {
     padding: 30px 0 0;
   }
+  .add-chart-title {
+    padding: 12px;
+    .details-title {
+      i {
+        color: #4bae4f;
+      }
+    }
+  }
 }
 
 @media (max-width: 772px) {
