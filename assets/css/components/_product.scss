@@ -280,6 +280,12 @@
           align-items: center;
           justify-content: center;
           cursor: pointer;
+          @extend%trans2;
+          &:active {
+            border: 0.5px solid rgba($color-gray, 0);
+            transform: translateY(4px) scale(0.98);
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0);
+          }
         }
       }
       .prag {
@@ -332,7 +338,7 @@
     // tab-content
 
     .tab-content {
-      padding: 24px 12px;
+      padding: 24px;
       .tab-details {
         padding: 0 0 30px;
         &:last-of-type {
@@ -342,6 +348,68 @@
           display: inline-block;
           .link-item {
             margin: 0 auto;
+          }
+        }
+        .details-title-tab {
+          font-size: 22px;
+          padding: 0 0 12px;
+          color: rgba($color-black, 1);
+          font-weight: 600;
+        }
+        .prag {
+          font-size: 18px;
+          opacity: 0.8;
+        }
+        .list-detils-dots {
+          list-style: disc;
+          padding: 0 26px;
+        }
+        .rate-details {
+          display: flex;
+          align-items: center;
+          .rate-details-list {
+            width: 100%;
+            .rate-list {
+              li {
+                justify-content: center;
+                width: 100%;
+                display: flex;
+                padding: 0 0 12px;
+                align-items: center;
+                .rate-title {
+                  font-size: 13px;
+                  color: rgba($color-black, 0.8);
+                  font-weight: 500;
+                }
+                .progress {
+                  margin: 0 12px;
+                  width: 50%;
+                  height: 5px;
+                  border-radius: 10px;
+                  .progress-bar {
+                    background-color: $color-gold;
+                  }
+                }
+              }
+            }
+          }
+          .rate-details-stars {
+            text-align: center;
+            .rate-counter-min {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              .number {
+                padding: 0 12px;
+                font-size: 34px;
+                color: rgba($color-black, 1);
+                font-weight: 500;
+              }
+              i {
+                color: $color-gold;
+                font-size: 30px;
+              }
+            }
           }
         }
         .details-title {

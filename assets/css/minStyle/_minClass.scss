@@ -57,6 +57,19 @@
   }
 }
 
+.star-list {
+  display: flex;
+  align-items: center;
+  li {
+    padding: 0 6px;
+    font-size: 20px;
+    color: rgba($color-gold, 1);
+    &.gray-star {
+      color: rgba($color-gray, 0.5);
+    }
+  }
+}
+
 @media (max-width: 772px) {
   .prag {
     font-size: 18px;

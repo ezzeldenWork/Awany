@@ -51,6 +51,9 @@
         opacity: 0.1;
       }
     }
+    &:active {
+      transform: translateY(1px) scale(0.98);
+    }
     i {
       @include dir(rtl) {
         padding: 0 12px 0 0;
@@ -90,6 +93,9 @@
     font-size: 22px;
     border: 0;
     background-color: transparent;
+    &:active {
+      transform: translateY(1px) scale(0.98);
+    }
   }
   input {
     width: 100px;
@@ -97,6 +103,11 @@
     text-align: center;
     border: 0;
     background-color: transparent;
+    &:focus {
+      box-shadow: 0;
+      border: 0;
+      outline: none;
+    }
   }
 }
 

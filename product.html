@@ -40,6 +40,10 @@
       href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css"
+    />
     <link rel="stylesheet" href="assets/css/style.css?v=1" />
     <title>Title</title>
   </head>
@@ -228,7 +232,12 @@
                         <button class="increase-quantity">
                           <i class="fas fa-plus"></i>
                         </button>
-                        <input type="number" value="1" class="quantity-input" />
+                        <input
+                          type="text"
+                          value="1"
+                          onkeydown="return false"
+                          class="quantity-input"
+                        />
                         <button class="descrease-quantity">
                           <i class="fas fa-minus"></i>
                         </button>
@@ -263,7 +272,7 @@
                         class="nav-link active"
                         id="nav-home-tab"
                         data-bs-toggle="tab"
-                        data-bs-target="#nav-home"
+                        data-bs-target="#product-details-tab"
                         type="button"
                         role="tab"
                         aria-controls="nav-home"
@@ -275,7 +284,7 @@
                         class="nav-link"
                         id="nav-profile-tab"
                         data-bs-toggle="tab"
-                        data-bs-target="#nav-profile"
+                        data-bs-target="#shipping-tab"
                         type="button"
                         role="tab"
                         aria-controls="nav-profile"
@@ -287,7 +296,7 @@
                         class="nav-link"
                         id="nav-contact-tab"
                         data-bs-toggle="tab"
-                        data-bs-target="#nav-contact"
+                        data-bs-target="#switch-tab"
                         type="button"
                         role="tab"
                         aria-controls="nav-contact"
@@ -299,7 +308,7 @@
                         class="nav-link"
                         id="nav-contact-tab"
                         data-bs-toggle="tab"
-                        data-bs-target="#nav-contact"
+                        data-bs-target="#opinions-tab"
                         type="button"
                         role="tab"
                         aria-controls="nav-contact"
@@ -312,9 +321,9 @@
                     <div class="tab-content" id="nav-tabContent">
                       <div
                         class="tab-pane fade show active"
-                        id="nav-home"
+                        id="product-details-tab"
                         role="tabpanel"
-                        aria-labelledby="nav-home-tab"
+                        aria-labelledby="product-details-tab"
                       >
                         <div class="tab-details">
                           <h4 class="details-title">مواصفات المنتج</h4>
@@ -371,7 +380,7 @@
                       </div>
                       <div
                         class="tab-pane fade"
-                        id="nav-profile"
+                        id="shipping-tab"
                         role="tabpanel"
                         aria-labelledby="nav-profile-tab"
                       >
@@ -434,25 +443,37 @@
                           </h5>
                           <ul class="list-unstyled pt-4">
                             <li class="pb-3">
-                              <div class="pretty p-default p-round">
-                                <input type="checkbox" />
-                                <div class="state">
-                                  <label
-                                    >إطلب قبل 4:00 م ليتم الشحن اليوم، ويصل لكم
-                                    خلال 2 إلى 3 أيام عمل،
-                                  </label>
-                                </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="exampleRadios"
+                                  id="exampleRadios2"
+                                  value="option2"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="exampleRadios2"
+                                >
+                                  Default radio
+                                </label>
                               </div>
                             </li>
                             <li class="pb-3">
-                              <div class="pretty p-default p-round">
-                                <input type="checkbox" checked />
-                                <div class="state">
-                                  <label
-                                    >إطلب بعد 4:00 التجهيز اليوم والشحن اليوم
-                                    التالي.</label
-                                  >
-                                </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="exampleRadios"
+                                  id="exampleRadios1"
+                                  value="option1"
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="exampleRadios1"
+                                >
+                                  Default radio
+                                </label>
                               </div>
                             </li>
                           </ul>
@@ -467,11 +488,232 @@
                       </div>
                       <div
                         class="tab-pane fade"
-                        id="nav-contact"
+                        id="switch-tab"
                         role="tabpanel"
                         aria-labelledby="nav-contact-tab"
                       >
-                        ...
+                        <div class="tab-details">
+                          <div class="title-box text-center">
+                            <h4 class="details-title">
+                              <img
+                                src="./assets/img/repeat.png"
+                                alt=""
+                                class="img-fluid"
+                                style="height: 35px"
+                              />
+                              <span class="text">
+                                7 أيام لأرجاع المنتج أو استبدالة من تاريخ
+                                استلامك للطلب
+                              </span>
+                            </h4>
+                            <p class="prag">
+                              عميلنا العزيز إذا يهمك ميزة معينة في المنتج أو
+                              لديك استفسار تواصل معنا وتساب واسألنا قبل الطلب،
+                              الصورة والوصف غير كافي نسعد بتواصلك معنا والاجابة
+                              على استفسارك.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="tab-details">
+                          <div class="title-box">
+                            <h4 class="details-title text-center">
+                              <span class="text"> إرجاع مجاني </span>
+                            </h4>
+                          </div>
+                        </div>
+                        <div class="tab-details">
+                          <h5 class="details-title-tab">
+                            إذا وصلك المنتج مكسور او به خلل مصنعي
+                          </h5>
+                          <p class="prag">
+                            أبلغنا خلال يوم من استلامك وسوف نطلب منك اما
+                            الاحتفاظ بالمنتج ونعيد لك المبلغ او سنطلب منك إعادة
+                            شحنه لنا ونحن نتحمل قيمة الشحن و نعيد لك المبلغ.
+                          </p>
+                        </div>
+                        <div class="tab-details">
+                          <h5 class="details-title-tab">
+                            إذا وصلك المنتج مختلف عن طلبك
+                          </h5>
+                          <p class="prag">
+                            أبلغنا خلال يومين من استلامك وسوف نطلب إعادة شحنه
+                            لنا (مثلاً طلبت منتج أحمر وصلك أزرق، طلبت كاسات وصلك
+                            فناجين) نحن نتحمل قيمة الشحن ونعيد لك المبلغ.
+                          </p>
+                        </div>
+                        <div class="tab-details">
+                          <h5 class="details-title">
+                            إذا لم تعد تحتاج المنتج وتريد ارجاعه
+                          </h5>
+                          <ul class="list-detils-dots">
+                            <li>
+                              <p class="prag">
+                                في حال لم نصدر بوليصة الشحن سوف نعيد لك كامل
+                                المبلغ.
+                              </p>
+                            </li>
+                            <li>
+                              <p class="prag">
+                                في حال تم إصدار بوليصة الشحن ولم يتم الارسال
+                                وطلبت الإلغاء سوف نعيد لك المبلغ بعد خصم قيمة
+                                بوليصية الشحن لان بوليصة الشحن غير مستردة.
+                              </p>
+                            </li>
+                            <li>
+                              <p class="prag">
+                                في حال تم إصدار وارسال المنتجات لكم وتريد
+                                إرجاعها أو استبدلها أبلغنا خلال 7 أيام من
+                                استلامك، سوف نطلب إعادة شحنها لنا ونعيد لك
+                                المبلغ بعد أن نخصم قيمة الشحن الاساسية 29 ريال
+                                للأرسال + 29 ريال لإرجاع المنتجات لنا بعد التاكد
+                                ان المنتجات بحالتها الاصلية لم تجرب أو تستخدم عن
+                                كل طرد (كرتون) .
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="tab-details">
+                          <h5 class="details-title">
+                            إذا تم استخدام او تجربة المنتج
+                          </h5>
+                          <ul class="list-detils-dots">
+                            <li>
+                              <p class="prag">
+                                نعتذر منكم لا يمكننا إرجاعه أو استبداله، لذا يجب
+                                أن يكون المنتج بحالته الاصلية وبكامل الملحقات
+                                والتغليف الأصلي لتتمكن من الإرجاع أو الاستبدال.
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="tab-details">
+                          <h5 class="details-title">إعادة المبلغ للعميل</h5>
+                          <ul class="list-detils-dots">
+                            <li>
+                              <p class="prag">
+                                بعد ان نستلم المنتج من شركة الشحن وكان المنتج
+                                مطابق لشروط الإرجاع والاستبدال يتم إعادة المبلغ
+                                للعميل في أقل من 24 ساعة عمل.
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="tab-details text-center">
+                          <div class="link-box gray-link">
+                            <a href="" class="link-item" tabindex="0">
+                              طلب إرجاع أو استبدال
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="opinions-tab"
+                        role="tabpane4"
+                        aria-labelledby="nav-contact-tab"
+                      >
+                        <div class="tab-details">
+                          <div class="rate-details">
+                            <div class="rate-details-list">
+                              <ul class="rate-list">
+                                <li>
+                                  <span class="rate-title">5 نجوم</span>
+                                  <div class="progress">
+                                    <div
+                                      class="progress-bar"
+                                      role="progressbar"
+                                      style="width: 60%"
+                                      aria-valuenow="60"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                  </div>
+                                  <span class="rate-title">6</span>
+                                </li>
+                                <li>
+                                  <span class="rate-title">4 نجوم</span>
+                                  <div class="progress">
+                                    <div
+                                      class="progress-bar"
+                                      role="progressbar"
+                                      style="width: 25%"
+                                      aria-valuenow="25"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                  </div>
+                                  <span class="rate-title">2</span>
+                                </li>
+                                <li>
+                                  <span class="rate-title">3 نجوم</span>
+                                  <div class="progress">
+                                    <div
+                                      class="progress-bar"
+                                      role="progressbar"
+                                      style="width: 30%"
+                                      aria-valuenow="30"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                  </div>
+                                  <span class="rate-title">1</span>
+                                </li>
+                                <li>
+                                  <span class="rate-title">2 نجوم</span>
+                                  <div class="progress">
+                                    <div
+                                      class="progress-bar"
+                                      role="progressbar"
+                                      style="width: 20%"
+                                      aria-valuenow="20"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                  </div>
+                                  <span class="rate-title">6</span>
+                                </li>
+                                <li>
+                                  <span class="rate-title">1 نجوم</span>
+                                  <div class="progress">
+                                    <div
+                                      class="progress-bar"
+                                      role="progressbar"
+                                      style="width: 10%"
+                                      aria-valuenow="10"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                  </div>
+                                  <span class="rate-title">1</span>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="rate-details-stars">
+                              <div class="rate-counter-min">
+                                <svg
+                                  version="1.1"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 12.705 512 486.59"
+                                  x="0px"
+                                  y="0px"
+                                  xml:space="preserve"
+                                  width="40px"
+                                  height="40px"
+                                  fill="#fbd667"
+                                  style="margin-left: 0px"
+                                >
+                                  <polygon
+                                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 "
+                                  ></polygon>
+                                </svg>
+                                <span class="number"> 4.9 </span>
+                              </div>
+                              <div class="stars-box">
+                                <div id="rate-stars"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -546,72 +788,6 @@
       </div>
       <!--           end footer-->
 
-      <div
-        class="modal fade edit-modal"
-        id="exampleModalToggle2"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header pb-0">
-              <button type="button" data-bs-dismiss="modal" aria-label="Close">
-                <i class="fas fa-times"></i>
-              </button>
-            </div>
-            <div class="modal-body">
-              <div class="fillter-box">
-                <div class="section-title-box mb-2">
-                  <h3 class="section-title">خدمتنا</h3>
-                </div>
-                <ul class="list-unstyled">
-                  <li>
-                    <div class="pretty p-default p-round">
-                      <input type="checkbox" />
-                      <div class="state">
-                        <label>Default</label>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="pretty p-default p-round">
-                      <input type="checkbox" />
-                      <div class="state">
-                        <label>Default</label>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="fillter-box pt-4">
-                <div class="section-title-box mb-2">
-                  <h3 class="section-title">ترتيب حسب السعر:</h3>
-                </div>
-                <ul class="list-unstyled">
-                  <li>
-                    <div class="pretty p-default p-round">
-                      <input type="checkbox" />
-                      <div class="state">
-                        <label>Default</label>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="pretty p-default p-round">
-                      <input type="checkbox" />
-                      <div class="state">
-                        <label>Default</label>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div class="overlay"></div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
@@ -620,7 +796,28 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script>
+      /* Javascript */
+      $(function () {
+        var $rateYo = $("#rate-stars").rateYo({
+          fullStar: true,
+          multiColor: {
+            startColor: "#FF0000", //RED
+            endColor: "#fbd667", //GREEN
+          },
+        });
+        //     var rating = $rateYo.rateYo("rating");
+      });
+    </script>
   </body>
 </html>

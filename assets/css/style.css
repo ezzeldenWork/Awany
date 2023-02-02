@@ -84,6 +84,19 @@ body {
   width: calc(100% - 5px) !important;
 }
 
+.star-list {
+  display: flex;
+  align-items: center;
+}
+.star-list li {
+  padding: 0 6px;
+  font-size: 20px;
+  color: #fbd667;
+}
+.star-list li.gray-star {
+  color: rgba(111, 115, 127, 0.5);
+}
+
 @media (max-width: 772px) {
   .prag {
     font-size: 18px;
@@ -563,6 +576,11 @@ html[dir=rtl] .offer-box-contain .offer-img-box {
   justify-content: center;
   cursor: pointer;
 }
+.product-details-section .product-details-content .details-box .details-box-list li:active {
+  border: 0.5px solid rgba(111, 115, 127, 0);
+  transform: translateY(4px) scale(0.98);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0);
+}
 .product-details-section .product-details-content .details-box .prag {
   font-weight: 500;
   font-size: 18px;
@@ -607,7 +625,7 @@ html[dir=rtl] .offer-box-contain .offer-img-box {
   border-bottom: 3px solid #6f737f !important;
 }
 .details-tap-section .tab-box .tab-content {
-  padding: 24px 12px;
+  padding: 24px;
 }
 .details-tap-section .tab-box .tab-content .tab-details {
   padding: 0 0 30px;
@@ -620,6 +638,66 @@ html[dir=rtl] .offer-box-contain .offer-img-box {
 }
 .details-tap-section .tab-box .tab-content .tab-details .link-box .link-item {
   margin: 0 auto;
+}
+.details-tap-section .tab-box .tab-content .tab-details .details-title-tab {
+  font-size: 22px;
+  padding: 0 0 12px;
+  color: black;
+  font-weight: 600;
+}
+.details-tap-section .tab-box .tab-content .tab-details .prag {
+  font-size: 18px;
+  opacity: 0.8;
+}
+.details-tap-section .tab-box .tab-content .tab-details .list-detils-dots {
+  list-style: disc;
+  padding: 0 26px;
+}
+.details-tap-section .tab-box .tab-content .tab-details .rate-details {
+  display: flex;
+  align-items: center;
+}
+.details-tap-section .tab-box .tab-content .tab-details .rate-details .rate-details-list {
+  width: 100%;
+}
+.details-tap-section .tab-box .tab-content .tab-details .rate-details .rate-details-list .rate-list li {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  padding: 0 0 12px;
+  align-items: center;
+}
+.details-tap-section .tab-box .tab-content .tab-details .rate-details .rate-details-list .rate-list li .rate-title {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+}
+.details-tap-section .tab-box .tab-content .tab-details .rate-details .rate-details-list .rate-list li .progress {
+  margin: 0 12px;
+  width: 50%;
+  height: 5px;
+  border-radius: 10px;
+}
+.details-tap-section .tab-box .tab-content .tab-details .rate-details .rate-details-list .rate-list li .progress .progress-bar {
+  background-color: #fbd667;
+}
+.details-tap-section .tab-box .tab-content .tab-details .rate-details .rate-details-stars {
+  text-align: center;
+}
+.details-tap-section .tab-box .tab-content .tab-details .rate-details .rate-details-stars .rate-counter-min {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.details-tap-section .tab-box .tab-content .tab-details .rate-details .rate-details-stars .rate-counter-min .number {
+  padding: 0 12px;
+  font-size: 34px;
+  color: black;
+  font-weight: 500;
+}
+.details-tap-section .tab-box .tab-content .tab-details .rate-details .rate-details-stars .rate-counter-min i {
+  color: #fbd667;
+  font-size: 30px;
 }
 .details-tap-section .tab-box .tab-content .tab-details .details-title {
   font-size: 24px;
@@ -844,6 +922,9 @@ html[dir=rtl] .offer-box-contain .offer-img-box {
 .link-box .link-item:hover::before {
   opacity: 0.1;
 }
+.link-box .link-item:active {
+  transform: translateY(1px) scale(0.98);
+}
 html[dir=rtl] .link-box .link-item i {
   padding: 0 12px 0 0;
 }
@@ -880,12 +961,20 @@ html[dir=ltr] .link-box .link-item i {
   border: 0;
   background-color: transparent;
 }
+.quantity-button button:active {
+  transform: translateY(1px) scale(0.98);
+}
 .quantity-button input {
   width: 100px;
   font-size: 22px;
   text-align: center;
   border: 0;
   background-color: transparent;
+}
+.quantity-button input:focus {
+  box-shadow: 0;
+  border: 0;
+  outline: none;
 }
 
 @media (max-width: 772px) {
@@ -1062,6 +1151,6 @@ html[dir=rtl] .pretty .state label:before {
   transition: 0.4s all ease-in-out;
 }
 
-.slick-slider .time-arrow, .header-section .logo-box .menu-icon i, .header-section .nav-list ul li a, .icon-box, .icon-box a, .footer-section .footer-list ul li a, .min-product, .min-product:after, .link-box .link-item, .more-link a {
+.slick-slider .time-arrow, .header-section .logo-box .menu-icon i, .header-section .nav-list ul li a, .icon-box, .icon-box a, .footer-section .footer-list ul li a, .min-product, .min-product:after, .product-details-section .product-details-content .details-box .details-box-list li, .link-box .link-item, .more-link a {
   transition: 0.2s all ease-in-out;
 }
