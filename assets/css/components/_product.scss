@@ -550,7 +550,6 @@
     }
   }
 }
-
 @media (max-width: 992px) {
   .product-details-section {
     .product-details-content {
@@ -782,6 +781,17 @@
       font-size: 16px;
       font-weight: 500;
       color: rgba($color-gray, 0.5);
+    }
+    .quantity-button {
+      margin-top: 12px;
+      padding: 4px;
+      button,
+      input {
+        font-size: 14px;
+      }
+      input {
+        width: 40px;
+      }
     }
   }
 }

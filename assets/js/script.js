@@ -93,17 +93,12 @@ $(document).ready(function () {
     }
   );
 
-  const valueInput =
-    ".product-details-section .product-details-content .details-box.button-container .link-box .quantity-input";
-  $(
-    ".product-details-section .product-details-content .details-box.button-container .link-box .increase-quantity"
-  ).click(function (e) {
+  const valueInput = ".quantity-button .quantity-input";
+  $(".quantity-button .increase-quantity").click(function (e) {
     e.preventDefault();
     $(valueInput).val(+$(valueInput).val() + 1);
   });
-  $(
-    ".product-details-section .product-details-content .details-box.button-container .link-box .descrease-quantity"
-  ).click(function (e) {
+  $(".quantity-button .descrease-quantity").click(function (e) {
     if ($(valueInput).val() > 1) {
       $(valueInput).val(+$(valueInput).val() - 1);
     } else {

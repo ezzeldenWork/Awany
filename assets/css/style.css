@@ -351,10 +351,49 @@ body {
     width: 50%;
   }
 }
+.cart-section .cart-box {
+  background-color: #fdfdff;
+  box-shadow: inset -2px -2px 4px rgba(111, 12, 11, 0.04), inset 3px 3px 4px rgba(111, 12, 11, 0.04);
+  padding: 24px;
+  border-radius: 6px;
+}
+.cart-section .cart-box .title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #000;
+  text-align: center;
+  padding: 0 0 24px;
+}
+.cart-section .cart-box .cart-list-box .cart-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 24px;
+}
+.cart-section .cart-box .cart-list-box .cart-list li .cart-list-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+.cart-section .cart-box .cart-list-box .cart-list li .cart-list-sub-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+}
+.cart-section .cart-box .section-title .title {
+  width: 80%;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 20px;
+}
+
 .section-title .title {
   font-weight: 500;
   font-size: 34px;
   color: #000;
+}
+.section-title .title.primary-title {
+  color: #6f0c0b;
 }
 
 .details-title {
@@ -1082,6 +1121,17 @@ html[dir=rtl] .offer-box-contain .offer-img-box {
   font-weight: 500;
   color: rgba(111, 115, 127, 0.5);
 }
+.min-product-box .min-product-box-content .quantity-button {
+  margin-top: 12px;
+  padding: 4px;
+}
+.min-product-box .min-product-box-content .quantity-button button,
+.min-product-box .min-product-box-content .quantity-button input {
+  font-size: 14px;
+}
+.min-product-box .min-product-box-content .quantity-button input {
+  width: 40px;
+}
 
 .history-banner-section {
   padding: 60px 0;
@@ -1408,6 +1458,7 @@ html[dir=ltr] .link-box .link-item i {
 .edit-modal .button-box-bar {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .edit-modal .button-box-bar .link-box {
@@ -1466,4 +1517,33 @@ html[dir=rtl] .pretty .state label:before {
 }
 .pretty.p-default input:checked ~ .state label:after {
   background-color: #6f0c0b !important;
+}
+
+.coupon-box-form form .form-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.coupon-box-form form input {
+  padding: 6px;
+  border: 1px solid #6f737f;
+  border-radius: 5px;
+  color: #6f737f;
+  width: 60%;
+}
+.coupon-box-form form button {
+  color: #fff;
+  border: 1px solid #6f737f;
+  border-radius: 5px;
+  background-color: #6f737f;
+  padding: 8px 12px;
+  transition: 0.2s all ease-in-out;
+}
+.coupon-box-form form button:hover {
+  border-color: #6f0c0b;
+  background-color: #6f0c0b;
+}
+.coupon-box-form form .link-box .link-item {
+  display: block;
+  width: 100%;
 }

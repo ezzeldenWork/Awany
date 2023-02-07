@@ -3,6 +3,9 @@
     font-weight: 500;
     font-size: 34px;
     color: $color-black;
+    &.primary-title {
+      color: rgba($color-primary, 1);
+    }
   }
 }
 .details-title {

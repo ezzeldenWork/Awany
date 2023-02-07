@@ -71,6 +71,7 @@
   .button-box-bar {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     .link-box {
       display: inline-block;
