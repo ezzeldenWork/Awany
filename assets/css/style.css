@@ -1141,6 +1141,11 @@ html[dir=rtl] .offer-box-contain .offer-img-box {
   width: 40px;
 }
 
+@media (max-width: 772px) {
+  .min-product-box .min-product-box-content .product-title {
+    font-size: 17px;
+  }
+}
 .history-banner-section {
   padding: 60px 0;
   z-index: 1;
