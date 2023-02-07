@@ -387,6 +387,14 @@ body {
   font-size: 20px;
 }
 
+@media (max-width: 772px) {
+  .cart-section .cart-box .cart-list-box .cart-list li .cart-list-title {
+    font-size: 18px;
+  }
+  .cart-section .cart-box .cart-list-box .cart-list li .cart-list-sub-title {
+    font-size: 15px;
+  }
+}
 .section-title .title {
   font-weight: 500;
   font-size: 34px;
@@ -1546,4 +1554,15 @@ html[dir=rtl] .pretty .state label:before {
 .coupon-box-form form .link-box .link-item {
   display: block;
   width: 100%;
+}
+
+@media (max-width: 772px) {
+  .coupon-box-form form .form-box {
+    display: block;
+  }
+  .coupon-box-form form .form-box input,
+.coupon-box-form form .form-box button {
+    width: 100%;
+    margin: 6px 0;
+  }
 }

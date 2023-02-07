@@ -93,14 +93,18 @@ $(document).ready(function () {
     }
   );
 
-  const valueInput = ".quantity-button .quantity-input";
   $(".quantity-button .increase-quantity").click(function (e) {
     e.preventDefault();
-    $(valueInput).val(+$(valueInput).val() + 1);
+    $(this)
+      .siblings(".quantity-input")
+      .val(+$(this).siblings(".quantity-input").val() + 1);
   });
   $(".quantity-button .descrease-quantity").click(function (e) {
-    if ($(valueInput).val() > 1) {
-      $(valueInput).val(+$(valueInput).val() - 1);
+    e.preventDefault();
+    if ($(this).siblings(".quantity-input").val() > 1) {
+      $(this)
+        .siblings(".quantity-input")
+        .val(+$(this).siblings(".quantity-input").val() - 1);
     } else {
       return;
     }

@@ -42,3 +42,21 @@
     }
   }
 }
+@media (max-width: 772px) {
+  .cart-section {
+    .cart-box {
+      .cart-list-box {
+        .cart-list {
+          li {
+            .cart-list-title {
+              font-size: 18px;
+            }
+            .cart-list-sub-title {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

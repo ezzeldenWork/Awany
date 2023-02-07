@@ -32,3 +32,18 @@
     }
   }
 }
+
+@media (max-width: 772px) {
+  .coupon-box-form {
+    form {
+      .form-box {
+        display: block;
+        input,
+        button {
+          width: 100%;
+          margin: 6px 0;
+        }
+      }
+    }
+  }
+}
