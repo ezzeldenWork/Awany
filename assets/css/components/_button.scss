@@ -17,6 +17,17 @@
       }
     }
   }
+  &.border-link {
+    .link-item {
+      border: 1px solid $color-primary;
+      background-color: transparent;
+      color: $color-primary;
+      &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+      }
+    }
+  }
   .link-item {
     display: flex;
     align-items: center;

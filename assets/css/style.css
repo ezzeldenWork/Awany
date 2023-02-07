@@ -96,6 +96,36 @@ body {
   height: 20px;
 }
 
+.delete-item {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6f0c0b;
+  transition: 0.2s all ease-in-out;
+}
+.delete-item:hover {
+  color: #e1c5bd;
+}
+.delete-item i {
+  padding: 0 6px;
+}
+
+.total-box-bar {
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.total-box-bar .title {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+.total-box-bar .price {
+  font-size: 19px;
+  font-weight: 700;
+  color: black;
+}
+
 @media (max-width: 992px) {
   .details-title {
     font-size: 20px;
@@ -1038,6 +1068,20 @@ html[dir=rtl] .offer-box-contain .offer-img-box {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.min-product-box .min-product-box-content {
+  padding: 0 24px;
+}
+.min-product-box .min-product-box-content .product-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+}
+.min-product-box .min-product-box-content .prag {
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(111, 115, 127, 0.5);
+}
 
 .history-banner-section {
   padding: 60px 0;
@@ -1128,6 +1172,15 @@ html[dir=rtl] .offer-box-contain .offer-img-box {
 }
 .link-box.gray-link .link-item:hover {
   background-color: #6f0c0b;
+}
+.link-box.border-link .link-item {
+  border: 1px solid #6f0c0b;
+  background-color: transparent;
+  color: #6f0c0b;
+}
+.link-box.border-link .link-item:hover {
+  background-color: #6f0c0b;
+  color: #fff;
 }
 .link-box .link-item {
   display: flex;
@@ -1302,10 +1355,10 @@ html[dir=ltr] .link-box .link-item i {
   border: 0;
   background-color: transparent;
   font-size: 22px;
+  outline: transparent;
 }
 .edit-modal .modal-header button:focus {
   border: 0;
-  outline: none;
   box-shadow: none;
 }
 .edit-modal .error-content img {
@@ -1348,6 +1401,24 @@ html[dir=ltr] .link-box .link-item i {
 }
 .edit-modal .add-chart-title .details-title i {
   color: #4bae4f;
+}
+.edit-modal .total-box-bar {
+  padding: 24px 0 12px;
+}
+.edit-modal .button-box-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.edit-modal .button-box-bar .link-box {
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.edit-modal .button-box-bar .link-box .link-item {
+  margin: 6px 1px;
+  padding: 14px 22px;
 }
 
 @media (max-width: 772px) {
