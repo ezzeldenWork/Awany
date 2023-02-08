@@ -1198,13 +1198,14 @@ html[dir=rtl] .offer-box-contain .offer-img-box {
   opacity: 0.3;
 }
 .history-banner-section.banner-backGround::after {
-  background-color: rgba(111, 12, 11, 0.3);
+  background: rgba(142, 134, 134, 0.6);
 }
 .history-banner-section.banner-backGround .banner-content .banner-title {
   color: white;
 }
 .history-banner-section.banner-backGround .banner-content .prag {
   color: white;
+  opacity: 1;
 }
 .history-banner-section .banner-content .banner-title {
   color: black;

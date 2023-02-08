@@ -35,7 +35,7 @@
   }
   &.banner-backGround {
     &::after {
-      background-color: rgba($color-primary, 0.3);
+      background: rgba(142, 134, 134, 0.6);
     }
     .banner-content {
       .banner-title {
@@ -43,6 +43,7 @@
       }
       .prag {
         color: rgba($color-white, 1);
+        opacity: 1;
       }
     }
   }
