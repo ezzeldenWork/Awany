@@ -1,0 +1,14 @@
+.discounts-section {
+}
+.discounts-title-box {
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 24px;
+  background-color: rgba($color-primary, 0.2);
+  font-size: 22px;
+  color: $color-black;
+  text-align: center;
+  &.gray-back {
+    background-color: rgba($color-gray, 0.1);
+  }
+}

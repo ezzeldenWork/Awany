@@ -4,9 +4,19 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      &.primary-button {
+        button {
+          background-color: $color-primary;
+          border-color: $color-primary;
+          &:hover {
+            border-color: $color-black;
+            background-color: $color-black;
+          }
+        }
+      }
     }
     input {
-      padding: 6px;
+      padding: 8px;
       border: 1px solid $color-gray;
       border-radius: 5px;
       color: $color-gray;

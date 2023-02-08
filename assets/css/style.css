@@ -353,7 +353,7 @@ body {
 }
 .cart-section .cart-box {
   background-color: #fdfdff;
-  box-shadow: inset -2px -2px 4px rgba(111, 12, 11, 0.04), inset 3px 3px 4px rgba(111, 12, 11, 0.04);
+  box-shadow: inset -2px -2px 12px rgba(111, 12, 11, 0.05), inset 3px 3px 12px rgba(111, 12, 11, 0.05);
   padding: 24px;
   border-radius: 6px;
 }
@@ -395,6 +395,19 @@ body {
     font-size: 15px;
   }
 }
+.discounts-title-box {
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 24px;
+  background-color: rgba(111, 12, 11, 0.2);
+  font-size: 22px;
+  color: #000;
+  text-align: center;
+}
+.discounts-title-box.gray-back {
+  background-color: rgba(111, 115, 127, 0.1);
+}
+
 .section-title .title {
   font-weight: 500;
   font-size: 34px;
@@ -999,7 +1012,9 @@ html[dir=rtl] .offer-box-contain .offer-img-box {
     font-size: 14px;
   }
   .offer-box-contain {
+    margin: 0 0 24px;
     display: flex;
+    height: unset;
     flex-direction: column;
   }
   .offer-box-contain .offer-img-box {
@@ -1154,6 +1169,19 @@ html[dir=rtl] .offer-box-contain .offer-img-box {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.discounts-section .history-banner-section {
+  padding: 60px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.discounts-section .history-banner-section .banner-content {
+  max-width: 40%;
+}
+.discounts-section .history-banner-section .link-box .link-item {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
 .history-banner-section::after {
   content: "";
   position: absolute;
@@ -1198,12 +1226,26 @@ html[dir=rtl] .offer-box-contain .offer-img-box {
   filter: drop-shadow(2px 10px 2px rgba(0, 0, 0, 0.1));
 }
 
+.offer-banner-section {
+  padding: 60px 0;
+  background-color: rgba(111, 115, 127, 0.3);
+}
+
 @media (max-width: 772px) {
   .history-banner-section {
     padding: 30px 0;
   }
   .history-banner-section .banner-content {
     text-align: center;
+  }
+  .discounts-section .history-banner-section .banner-content {
+    max-width: 100%;
+  }
+  .discounts-section .history-banner-section .banner-content .link-box {
+    text-align: center;
+  }
+  .discounts-section .history-banner-section .banner-content .link-box .link-item {
+    margin: 0 auto;
   }
   .history-banner-section .banner-content .banner-title {
     font-size: 30px;
@@ -1537,8 +1579,16 @@ html[dir=rtl] .pretty .state label:before {
   align-items: center;
   justify-content: space-between;
 }
+.coupon-box-form form .form-box.primary-button button {
+  background-color: #6f0c0b;
+  border-color: #6f0c0b;
+}
+.coupon-box-form form .form-box.primary-button button:hover {
+  border-color: #000;
+  background-color: #000;
+}
 .coupon-box-form form input {
-  padding: 6px;
+  padding: 8px;
   border: 1px solid #6f737f;
   border-radius: 5px;
   color: #6f737f;

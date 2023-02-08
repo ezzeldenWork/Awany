@@ -5,6 +5,19 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  .discounts-section & {
+    padding: 60px;
+    border-radius: 10px;
+    overflow: hidden;
+    .banner-content {
+      max-width: 40%;
+    }
+    .link-box {
+      .link-item {
+        width: fit-content;
+      }
+    }
+  }
   &::after {
     content: "";
     position: absolute;
@@ -55,11 +68,26 @@
     }
   }
 }
+
+.offer-banner-section {
+  padding: 60px 0;
+  background-color: rgba($color-gray, 0.3);
+}
+
 @media (max-width: 772px) {
   .history-banner-section {
     padding: 30px 0;
     .banner-content {
       text-align: center;
+      .discounts-section & {
+        max-width: 100%;
+        .link-box {
+          text-align: center;
+          .link-item {
+            margin: 0 auto;
+          }
+        }
+      }
       .banner-title {
         font-size: 30px;
       }

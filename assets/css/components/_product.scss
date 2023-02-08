@@ -617,7 +617,9 @@
     }
   }
   .offer-box-contain {
+    margin: 0 0 24px;
     display: flex;
+    height: unset;
     flex-direction: column;
     .offer-img-box {
       order: -1;
