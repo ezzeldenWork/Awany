@@ -216,20 +216,16 @@
   }
 }
 
-.gray-back {
-  background-color: rgba($color-secondary-blue, 1) !important;
-}
-
 // offer-box
 .offer-box-contain {
   padding: 14px;
   border-radius: 5px;
-  background-color: rgba($color-primary, 0.1);
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-grow: 1;
   height: 100%;
+  @extend.primary-color;
   .content-box {
     width: 45%;
     text-align: center;
