@@ -216,6 +216,10 @@
   }
 }
 
+.gray-back {
+  background-color: rgba($color-secondary-blue, 1) !important;
+}
+
 // offer-box
 .offer-box-contain {
   padding: 14px;
@@ -226,9 +230,6 @@
   align-items: center;
   flex-grow: 1;
   height: 100%;
-  &.gray-back {
-    background-color: rgba($color-gray, 0.1);
-  }
   .content-box {
     width: 45%;
     text-align: center;

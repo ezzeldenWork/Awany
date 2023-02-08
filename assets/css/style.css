@@ -404,9 +404,6 @@ body {
   color: #000;
   text-align: center;
 }
-.discounts-title-box.gray-back {
-  background-color: rgba(111, 115, 127, 0.1);
-}
 
 .section-title .title {
   font-weight: 500;
@@ -650,6 +647,10 @@ body {
   text-decoration: line-through;
 }
 
+.gray-back {
+  background-color: #e5e8ee !important;
+}
+
 .offer-box-contain {
   padding: 14px;
   border-radius: 5px;
@@ -659,9 +660,6 @@ body {
   align-items: center;
   flex-grow: 1;
   height: 100%;
-}
-.offer-box-contain.gray-back {
-  background-color: rgba(111, 115, 127, 0.1);
 }
 .offer-box-contain .content-box {
   width: 45%;
