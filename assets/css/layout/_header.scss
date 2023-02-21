@@ -1,6 +1,12 @@
 .header-section {
   background-color: $color-gray;
   .logo-box {
+    img {
+      height: 65px;
+      object-fit: contain;
+    }
+  }
+  .logo-box {
     display: flex;
     align-items: center;
     .menu-icon {
