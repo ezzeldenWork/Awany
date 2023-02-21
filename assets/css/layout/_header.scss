@@ -12,6 +12,12 @@
     align-items: center;
     .menu-icon {
       display: none;
+      @include dir(rtl) {
+        padding-left: 10px;
+      }
+      @include dir(ltr) {
+        padding-right: 10px;
+      }
       i {
         font-size: 20px;
         cursor: pointer;

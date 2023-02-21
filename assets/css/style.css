@@ -164,6 +164,12 @@ body {
 .header-section .logo-box .menu-icon {
   display: none;
 }
+html[dir=rtl] .header-section .logo-box .menu-icon {
+  padding-left: 10px;
+}
+html[dir=ltr] .header-section .logo-box .menu-icon {
+  padding-right: 10px;
+}
 .header-section .logo-box .menu-icon i {
   font-size: 20px;
   cursor: pointer;
