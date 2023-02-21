@@ -152,9 +152,10 @@ body {
   background-color: #6f737f;
 }
 .header-section .logo-box img {
-  height: 65px;
+  height: 45px;
   -o-object-fit: contain;
      object-fit: contain;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.6));
 }
 .header-section .logo-box {
   display: flex;
@@ -324,6 +325,7 @@ body {
   height: 100px;
   -o-object-fit: contain;
      object-fit: contain;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.2));
 }
 .footer-section .footer-list {
   padding: 30px 0;

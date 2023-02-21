@@ -2,8 +2,9 @@
   background-color: $color-gray;
   .logo-box {
     img {
-      height: 65px;
+      height: 45px;
       object-fit: contain;
+      filter: drop-shadow(0px 0px 4px rgba($color-black, 0.6));
     }
   }
   .logo-box {
