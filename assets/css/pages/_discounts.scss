@@ -2,10 +2,11 @@
 }
 .discounts-title-box {
   border-radius: 10px;
-  font-weight: 700;
-  padding: 24px;
-  background-color: rgba($color-primary, 0.2);
-  font-size: 22px;
-  color: $color-black;
   text-align: center;
+  .title {
+    font-weight: 700;
+    padding: 24px;
+    font-size: 22px;
+    color: $color-black;
+  }
 }

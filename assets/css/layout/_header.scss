@@ -75,6 +75,10 @@
         font-size: 15px;
         color: $color-white;
         font-weight: 500;
+        @include trans(0.2);
+        &:hover {
+          color: rgba($color-secondary-blue, 1);
+        }
       }
     }
     .cart-list-icon {
@@ -96,6 +100,16 @@
   box-shadow: inset 0px -3px 4px rgba(111, 12, 11, 0.25),
     inset 0px 3px 4px rgba(111, 12, 11, 0.1);
   cursor: pointer;
+  &.profile-icon {
+    margin: 0 12px;
+    box-shadow: inset 0px -3px 4px rgba($color-white, 0.25),
+      inset 0px 3px 4px rgba($color-white, 0.1);
+    background-color: $color-primary;
+    color: rgba($color-white, 1);
+    &:hover {
+      background-color: rgba($color-white, 1);
+    }
+  }
   &.checked {
     background-color: rgba($color-primary, 1);
     box-shadow: inset 0px -3px 4px rgba(111, 12, 11, 0),

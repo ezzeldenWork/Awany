@@ -4,9 +4,6 @@
 @import "./minStyle/minClass";
 @import "./layout/header";
 @import "./layout/footer";
-@import "./pages/home";
-@import "./pages/cart";
-@import "./pages/discounts";
 @import "./components/title";
 @import "./components/product";
 @import "./components/banner";
@@ -15,4 +12,9 @@
 @import "./components/modal";
 @import "./components/form";
 @import "./components/coupone";
+@import "./pages/home";
+@import "./pages/cart";
+@import "./pages/discounts";
+@import "./pages/payment";
+@import "./pages/order-details";
 @import "./function/colors";

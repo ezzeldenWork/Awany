@@ -1,59 +1,63 @@
-.cart-section {
-  .cart-box {
-    background-color: #fdfdff;
-    box-shadow: inset -2px -2px 12px rgba(111, 12, 11, 0.05),
-      inset 3px 3px 12px rgba(111, 12, 11, 0.05);
-    padding: 24px;
-    border-radius: 6px;
-    .title {
-      font-size: 24px;
-      font-weight: 800;
-      color: $color-black;
-      text-align: center;
-      padding: 0 0 24px;
-    }
-    .cart-list-box {
-      .cart-list {
-        li {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          padding-bottom: 24px;
-          .cart-list-title {
-            font-size: 18px;
-            font-weight: 600;
-            color: $color-black;
-          }
-          .cart-list-sub-title {
-            font-size: 18px;
-            font-weight: 500;
-            color: $color-black;
-          }
+.cart-box {
+  background-color: #fdfdff;
+  box-shadow: inset -2px -2px 12px rgba(111, 12, 11, 0.05),
+    inset 3px 3px 12px rgba(111, 12, 11, 0.05);
+  padding: 24px;
+  border-radius: 6px;
+  .title {
+    font-size: 24px;
+    font-weight: 800;
+    color: $color-black;
+    text-align: center;
+    padding: 0 0 24px;
+  }
+  .cart-list-box {
+    .cart-list {
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 24px;
+        &:last-of-type {
+          padding-bottom: 0;
+        }
+        &.item-border-top {
+          border-top: 1px solid rgba($color-gray, 0.2);
+          padding-top: 24px;
+        }
+        .cart-list-title {
+          font-size: 18px;
+          font-weight: 600;
+          color: $color-black;
+        }
+        .cart-list-sub-title {
+          font-size: 18px;
+          font-weight: 500;
+          color: $color-black;
         }
       }
     }
-    .section-title {
-      .title {
-        width: 80%;
-        margin: 0 auto;
-        font-weight: 600;
-        font-size: 20px;
-      }
+  }
+  .section-title {
+    .title {
+      width: 80%;
+      margin: 0 auto;
+      font-weight: 600;
+      font-size: 20px;
     }
   }
 }
+
 @media (max-width: 772px) {
-  .cart-section {
-    .cart-box {
-      .cart-list-box {
-        .cart-list {
-          li {
-            .cart-list-title {
-              font-size: 18px;
-            }
-            .cart-list-sub-title {
-              font-size: 15px;
-            }
+  .cart-box {
+    .cart-list-box {
+      .cart-list {
+        li {
+          .cart-list-title {
+            font-size: 18px;
+          }
+          .cart-list-sub-title {
+            font-size: 15px;
           }
         }
       }

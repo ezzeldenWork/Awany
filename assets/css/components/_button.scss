@@ -28,6 +28,11 @@
       }
     }
   }
+  &.button-center {
+    .link-item {
+      margin: 0 auto;
+    }
+  }
   .link-item {
     display: flex;
     align-items: center;

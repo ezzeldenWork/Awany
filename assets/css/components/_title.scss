@@ -3,9 +3,9 @@
     font-weight: 500;
     font-size: 34px;
     color: $color-black;
-    &.primary-title {
-      color: rgba($color-primary, 1);
-    }
+  }
+  .done-item {
+    color: #4bae4f;
   }
 }
 .details-title {
@@ -16,6 +16,18 @@
   img {
     height: 60px;
   }
+  .title {
+    font-weight: 500;
+    font-size: 28px;
+    color: $color-black;
+  }
+  .prag {
+    font-size: 18px;
+  }
+}
+
+.primary-title {
+  color: rgba($color-primary, 1) !important;
 }
 @media (max-width: 992px) {
   .section-title {

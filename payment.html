@@ -120,117 +120,155 @@
       <!--           start content-->
       <div class="main-container">
         <main class="main wrapper">
+          <!-- start cart-section -->
           <div class="cart-section section-padding-40">
             <div class="container">
               <div class="row">
-                <div class="col-lg-6 col-md-12">
-                  <div class="min-product-box pb-4">
-                    <div class="img-box">
-                      <img
-                        src="./assets/img/fanus-bitariat5-600x600-removebg-preview 2.png"
-                        alt=""
-                        class="img-fluid"
-                      />
-                    </div>
-                    <div class="min-product-box-content">
-                      <h4 class="product-title">
-                        طقم ملون من الاطباق والمعالق الذهبية
-                      </h4>
-                      <p class="prag">49.00 ر.س</p>
-                      <a href="#" class="delete-item"
-                        ><span class="text">إزالة من السلة</span
-                        ><i class="fas fa-trash-alt"></i
-                      ></a>
-                      <div class="link-box quantity-button">
-                        <button class="increase-quantity">
-                          <i class="fas fa-plus"></i>
-                        </button>
-                        <input
-                          type="text"
-                          value="1"
-                          onkeydown="return false"
-                          class="quantity-input"
-                        />
-                        <button class="descrease-quantity">
-                          <i class="fas fa-minus"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="min-product-box pb-4">
-                    <div class="img-box">
-                      <img
-                        src="./assets/img/fanus-bitariat5-600x600-removebg-preview 2.png"
-                        alt=""
-                        class="img-fluid"
-                      />
-                    </div>
-                    <div class="min-product-box-content">
-                      <h4 class="product-title">
-                        طقم ملون من الاطباق والمعالق الذهبية
-                      </h4>
-                      <p class="prag">49.00 ر.س</p>
-                      <a href="#" class="delete-item"
-                        ><span class="text">إزالة من السلة</span
-                        ><i class="fas fa-trash-alt"></i
-                      ></a>
-                      <div class="link-box quantity-button">
-                        <button class="increase-quantity">
-                          <i class="fas fa-plus"></i>
-                        </button>
-                        <input
-                          type="text"
-                          value="1"
-                          onkeydown="return false"
-                          class="quantity-input"
-                        />
-                        <button class="descrease-quantity">
-                          <i class="fas fa-minus"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="min-product-box pb-4">
-                    <div class="img-box">
-                      <img
-                        src="./assets/img/fanus-bitariat5-600x600-removebg-preview 2.png"
-                        alt=""
-                        class="img-fluid"
-                      />
-                    </div>
-                    <div class="min-product-box-content">
-                      <h4 class="product-title">
-                        طقم ملون من الاطباق والمعالق الذهبية
-                      </h4>
-                      <p class="prag">49.00 ر.س</p>
-                      <a href="#" class="delete-item"
-                        ><span class="text">إزالة من السلة</span
-                        ><i class="fas fa-trash-alt"></i
-                      ></a>
-                      <div class="link-box quantity-button">
-                        <button class="increase-quantity">
-                          <i class="fas fa-plus"></i>
-                        </button>
-                        <input
-                          type="text"
-                          value="1"
-                          onkeydown="return false"
-                          class="quantity-input"
-                        />
-                        <button class="descrease-quantity">
-                          <i class="fas fa-minus"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="link-box border-link pt-4 pb-4">
-                    <a href="#" class="link-item">
-                      <span class="text">متابعة التسوق</span>
-                    </a>
+                <div class="col-md-8 col-12">
+                  <div class="payment-box-list">
+                    <ul class="list-unstyled payment-list">
+                      <li class="payment-box">
+                        <div class="payment-check">
+                          <div class="pretty p-default p-round">
+                            <input type="radio" name="price" />
+                            <div class="state">
+                              <label>حوالة مصرفية</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="payment-content">
+                          <div class="prag-box offer-box-contain">
+                            <p class="prag">
+                              قم بإجراء حوالة مباشرة لأحد حساباتنا المصرفية علي
+                              واحد من الحسابات البنكية. الرجاء إستخدام رقم طلبك
+                              كمرجع لعملية الدفع
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="payment-box">
+                        <div class="payment-check">
+                          <div class="pretty p-default p-round">
+                            <input type="radio" name="price" />
+                            <div class="state">
+                              <label
+                                >الدفع نقدا عند الإستلام - متوفر بالرياض فقط
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="payment-content">
+                          <div class="prag-box offer-box-contain">
+                            <p class="prag">الدفع عند التسليم مباشرة.</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="payment-box">
+                        <div class="payment-check">
+                          <div class="pretty p-default p-round">
+                            <input type="radio" name="price" />
+                            <div class="state">
+                              <label>
+                                <span class="text">
+                                  البطاقات البنكية (فيزا - ماستر كارد)
+                                </span>
+                                <img
+                                  src="./assets/img/visa.png"
+                                  alt=""
+                                  class="img-fluid"
+                                />
+                                <img
+                                  src="./assets/img/masterCard.png"
+                                  alt=""
+                                  class="img-fluid"
+                                />
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="payment-content">
+                          <div class="visa-box prag-box offer-box-contain">
+                            <form action="">
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <div class="form-group">
+                                    <label for="exampleInputEmail1"
+                                      >رقم الكارت
+                                    </label>
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="exampleInputEmail1"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                  <div class="form-group">
+                                    <label for="exampleInputEmail1"
+                                      >تاريخ الإنتهاء
+                                    </label>
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="exampleInputEmail1"
+                                      placeholder="سنة / شهر"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                  <div class="form-group">
+                                    <label for="exampleInputEmail1">cvv </label>
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="exampleInputEmail1"
+                                      placeholder="الكود"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="col-md-12">
+                                  <div class="pretty p-switch p-fill">
+                                    <input type="checkbox" />
+                                    <div class="state">
+                                      <label
+                                        >هل تود حفظ بيانات هذه البطاقة؟</label
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="payment-box">
+                        <div class="payment-check">
+                          <div class="pretty p-default p-round">
+                            <input type="radio" name="price" />
+                            <div class="state">
+                              <label>بطاقة مدي</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="payment-content">3</div>
+                      </li>
+                      <li class="payment-box">
+                        <div class="payment-check">
+                          <div class="pretty p-default p-round">
+                            <input type="radio" name="price" />
+                            <div class="state">
+                              <label
+                                >تابي : قسمها على 4 بدون رسوم ولا فوائد</label
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="payment-content">3</div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-                <div class="col-lg-6 col-md-12">
+                <div class="col-md-4 col-12">
                   <div class="cart-box">
                     <h2 class="title">ملخص الطلب</h2>
                     <div class="cart-list-box">
@@ -240,34 +278,21 @@
                           <h5 class="cart-list-sub-title">98.00 ر.س</h5>
                         </li>
                         <li>
-                          <h4 class="cart-list-title">مجموع المنتجات</h4>
+                          <h4 class="cart-list-title">الشحن</h4>
+                          <h5 class="cart-list-sub-title">98.00 ر.س</h5>
+                        </li>
+                        <li class="item-border-top">
+                          <h4 class="cart-list-title">الإجمالي</h4>
                           <h5 class="cart-list-sub-title">98.00 ر.س</h5>
                         </li>
                       </ul>
-                    </div>
-                    <div class="section-title text-center">
-                      <h3 class="title primary-title">
-                        يمكنك استخدام قسيمة شراء للحصول على خصم إضافي
-                      </h3>
-                    </div>
-                    <div class="coupon-box-form">
-                      <form action="">
-                        <div class="form-box">
-                          <input type="text" placeholder="أدخل القسيمة" />
-                          <button>استخدم القسيمة</button>
-                        </div>
-                        <div class="link-box pt-4">
-                          <button class="link-item">
-                            <span class="text">أتمم عملية الشراء</span>
-                          </button>
-                        </div>
-                      </form>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <!-- end cart-section -->
         </main>
       </div>
       <!--           end content-->
@@ -333,72 +358,6 @@
         </footer>
       </div>
       <!--           end footer-->
-
-      <div
-        class="modal fade edit-modal"
-        id="exampleModalToggle2"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header pb-0">
-              <button type="button" data-bs-dismiss="modal" aria-label="Close">
-                <i class="fas fa-times"></i>
-              </button>
-            </div>
-            <div class="modal-body">
-              <div class="fillter-box">
-                <div class="section-title-box mb-2">
-                  <h3 class="section-title">خدمتنا</h3>
-                </div>
-                <ul class="list-unstyled">
-                  <li>
-                    <div class="pretty p-default p-round">
-                      <input type="checkbox" />
-                      <div class="state">
-                        <label>Default</label>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="pretty p-default p-round">
-                      <input type="checkbox" />
-                      <div class="state">
-                        <label>Default</label>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="fillter-box pt-4">
-                <div class="section-title-box mb-2">
-                  <h3 class="section-title">ترتيب حسب السعر:</h3>
-                </div>
-                <ul class="list-unstyled">
-                  <li>
-                    <div class="pretty p-default p-round">
-                      <input type="checkbox" />
-                      <div class="state">
-                        <label>Default</label>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="pretty p-default p-round">
-                      <input type="checkbox" />
-                      <div class="state">
-                        <label>Default</label>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <div class="overlay"></div>
     </div>

@@ -1,0 +1,72 @@
+.payment-box-list {
+  .payment-list {
+    .payment-box {
+      margin: {
+        bottom: 24px;
+      }
+      &:last-of-type {
+        margin: 0;
+      }
+      .payment-check {
+        display: block;
+        position: relative;
+        margin: {
+          bottom: 12px;
+        }
+        .pretty {
+          width: 100%;
+          height: 100%;
+          position: relative;
+          input {
+            position: absolute;
+            inset: 0;
+          }
+        }
+      }
+      .payment-content {
+        display: none;
+        .prag-box {
+          max-width: 60%;
+          .prag {
+            font-weight: 500;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.visa-box {
+  position: relative;
+  z-index: 1;
+  &:after {
+    position: absolute;
+    content: "";
+    opacity: 0.3;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 123px;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/circle.png");
+  }
+  form {
+    width: 100%;
+    .form-group {
+      padding: 0 0 6px;
+      label {
+        font-size: 13px;
+        font-weight: 500;
+        color: $color-black;
+        margin-bottom: 4px;
+      }
+      input {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -11,10 +11,11 @@ $(document).ready(function () {
 
   // open menu
 
-  $(document).click(function (e) {
-    e.preventDefault();
+  $(document).click(function () {
     if ($(window).width() < 772) {
       $(".header-section .nav-list").slideUp();
+    } else {
+      return;
     }
   });
   $(".header-section .logo-box .menu-icon i").click(function (e) {
@@ -108,6 +109,11 @@ $(document).ready(function () {
     } else {
       return;
     }
+  });
+
+  $(".payment-box-list .payment-list .payment-box ").click(function (e) {
+    $(this).children(".payment-content").slideDown();
+    $(this).siblings().children(".payment-content").slideUp();
   });
 
   // favorite-icon-box
