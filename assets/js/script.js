@@ -9,6 +9,10 @@ $(document).ready(function () {
     nextArrow =
       "<div  class='time-arrow right-arrow'><i class='fas fa-chevron-right'></i></div>";
 
+  setTimeout(function () {
+    $(".loading-page").fadeOut();
+  }, 2000);
+
   // open menu
 
   $(document).click(function () {
