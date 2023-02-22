@@ -1693,7 +1693,7 @@ html[dir=rtl] .pretty.p-switch input:checked ~ .state label:after {
 }
 
 .loading-page {
-  background: #333;
+  background: #6f737f;
   position: fixed;
   z-index: 9999;
   inset: 0;
