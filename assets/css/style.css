@@ -303,12 +303,14 @@ html[dir=ltr] .header-section .logo-box .menu-icon {
   }
   .header-section {
     position: relative;
+    padding: 6px 0 0;
   }
   .header-section .logo-box .menu-icon {
     display: block;
   }
   .header-section .nav-list {
     padding: 0;
+    top: 57px;
     margin: 0;
     position: absolute;
     z-index: 999999;
