@@ -125,4 +125,28 @@ $(document).ready(function () {
     e.preventDefault();
     $(this).toggleClass("checked");
   });
+
+  // open-filter
+
+  $(".filter-open-box .filter-open").click(function (e) {
+    $(".filter-section .category-list-box").addClass("open-filter");
+    $(".overlay").show();
+    $("body").css({
+      overflowY: "hidden",
+    });
+  });
+  $(".overlay").click(function (e) {
+    $(".filter-section .category-list-box").removeClass("open-filter");
+    $(".overlay").hide();
+    $("body").css({
+      overflowY: "auto",
+    });
+  });
+
+  $(".slider-range").slider({
+    range: true,
+    min: 0,
+    max: 500,
+    values: [75, 300],
+  });
 });
