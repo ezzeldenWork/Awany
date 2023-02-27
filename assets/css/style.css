@@ -374,10 +374,18 @@ html[dir=ltr] .header-section .logo-box .menu-icon {
 }
 
 @media (max-width: 772px) {
+  .footer-section .logo-box img {
+    height: 60px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.2));
+  }
   .footer-section .footer-list ul li {
     margin: 0 0 20px;
-    text-align: start;
     width: 50%;
+  }
+  .footer-section .footer-list ul li a {
+    font-size: 14px;
   }
 }
 .section-title .title {
