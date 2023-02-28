@@ -18,14 +18,19 @@ $(document).ready(function () {
   $(document).click(function () {
     if ($(window).width() < 772) {
       $(".header-section .nav-list").slideUp();
-    } else {
-      return;
     }
+    $(".header-profile-list-box .list-box").fadeOut();
   });
   $(".header-section .logo-box .menu-icon i").click(function (e) {
     e.preventDefault();
     e.stopPropagation();
     $(".header-section .nav-list").slideToggle();
+  });
+
+  $(".header-profile-list-box").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $(this).children(".list-box").fadeToggle();
   });
 
   $(".common-slider").slick({

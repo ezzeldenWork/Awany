@@ -3,6 +3,9 @@
     font-weight: 500;
     font-size: 34px;
     color: $color-black;
+    i {
+      color: rgba($color-primary, 1);
+    }
   }
   .done-item {
     color: #4bae4f;
